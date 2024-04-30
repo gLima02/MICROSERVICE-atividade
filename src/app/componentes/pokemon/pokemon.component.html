@@ -1,0 +1,12 @@
+<h2>Exercicio 1</h2>
+<h4>Listar pokemons</h4>
+
+<ul>
+
+    @for(item of pokemons; track $index){
+      <li>  ID: {{item.id}} - Nome: {{item.name}} - URL: {{item.url}} -  
+        Imagem: <img [src]="item.imageURL" alt="Imagem {{item.name}}">> </li>
+
+    }
+  </ul>
+  

@@ -1,0 +1,23 @@
+
+<h2>Exercicio 2</h2>
+<h4>Listar Estados IBGE</h4>
+
+<div>
+
+  <table class="table table-sm table-borderless">
+    <thead class="thead-dark">
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Sigla</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of estados; let i = index;">
+        <td>{{ item.id }}</td>
+        <td>{{ item.nome }}</td>
+        <td>{{ item.sigla }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
