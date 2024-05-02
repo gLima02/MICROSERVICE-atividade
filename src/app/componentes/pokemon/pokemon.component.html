@@ -5,7 +5,7 @@
 
     @for(item of pokemons; track $index){
       <li>  ID: {{item.id}} - Nome: {{item.name}} - URL: {{item.url}} -  
-        Imagem: <img [src]="item.imageURL" alt="Imagem {{item.name}}">> </li>
+        Imagem: <img [src]="item.imageUrl" alt="Imagem {{item.name}}">> </li>
 
     }
   </ul>
